@@ -1,0 +1,64 @@
+.v-table {
+  overflow: hidden;
+  width: max-content;
+  margin-bottom: 14px;
+  width: 100%;
+  min-width: 700px;
+  border-radius: 12px;
+
+  &-wrapper {
+    overflow: auto;
+    margin-top: 15px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 9px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 100vh;
+      @apply bg-white
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      @apply bg-blue-400
+    }
+  }
+
+  &__header {
+    tr {
+      border-bottom: 1px solid rgba(23, 31, 38, 0.12);
+    }
+
+    &-th {
+      text-align: left;
+      padding: 12px;
+      font-size: 12px;
+      line-height: 16px;
+      @apply text-gray-700 font-semi-bold whitespace-nowrap
+    }
+  }
+
+  &__body {
+    tr {
+      &:hover {
+        td, button {
+          @apply bg-blue-100
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(23, 31, 38, 0.12);
+      }
+    }
+
+    &-td {
+      padding: 15px 13px 13px 13px;
+      font-size: 12px;
+      line-height: 12px;
+      @apply font-medium text-black
+    }
+  }
+  @apply bg-white
+}
