@@ -28,7 +28,7 @@
               placeholder="+ 998 (XX) XXX-XX-XX"
               rules="required"
               v-model="studentData.phone"
-              v-mask="'+ 998(9#)###-##-##'"
+              v-mask="'+998(9#)###-##-##'"
               @onClear="(val) => clearField(val)"
           ></BaseInput>
         </div>

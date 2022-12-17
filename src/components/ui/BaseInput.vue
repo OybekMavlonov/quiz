@@ -17,7 +17,6 @@
             @input="onInput"
             v-model="modelValue"
             v-bind="field"
-            :value="modelValue"
             class="bg-grey-300 border border-grey-700 text-grey-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pr-10 p-2.5 pl-3"
         />
         <div
